@@ -1,0 +1,64 @@
+{
+  "type": "index_parallel",
+  "spec": {
+    "dataSchema": {
+      "dataSource": "sales",
+      "timestampSpec": {
+        "column": "timestamp",
+        "format": "iso"
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+          "product",
+          "category",
+          "customer",
+          "country",
+          "city"
+        ]
+      },
+      "metricsSpec": [
+        {
+          "name": "count",
+          "type": "count"
+        },
+        {
+          "name": "total_quantity",
+          "type": "longSum",
+          "fieldName": "quantity"
+        },
+        {
+          "name": "total_revenue",
+          "type": "longSum",
+          "fieldName": "revenue"
+        }
+      ],
+      "granularitySpec": {
+        "type": "uniform",
+        "segmentGranularity": "HOUR",
+        "queryGranularity": "minute",
+        "rollup": true,
+        "intervals": ["2024-10-14T10:00:00Z/2024-10-14T11:00:00Z"]
+      }
+    },
+    "ioConfig": {
+      "type": "index_parallel",
+      "inputSource": {
+        "type": "local",
+        "baseDir": "/mnt/druid-deep-storage/sample-data/",
+        "filter": "sales-data.json"
+      },
+      "inputFormat": {
+        "type": "json"
+      },
+      "appendToExisting": false
+    },
+    "tuningConfig": {
+      "type": "index_parallel",
+      "partitionsSpec": {
+        "type": "dynamic",
+        "maxRowsPerSegment": 5000
+      },
+      "maxNumConcurrentSubTasks": 1
+    }
+  }
+}

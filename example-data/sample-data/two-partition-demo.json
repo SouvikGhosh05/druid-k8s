@@ -1,0 +1,12 @@
+{"timestamp":"2025-10-14T10:00:00Z","sensor_id":"TEMP-001","location":"Datacenter-A","rack":"R1","temperature":72.5,"humidity":45,"power_usage":850,"status":"normal"}
+{"timestamp":"2025-10-14T10:05:00Z","sensor_id":"TEMP-002","location":"Datacenter-A","rack":"R2","temperature":68.3,"humidity":48,"power_usage":920,"status":"normal"}
+{"timestamp":"2025-10-14T10:10:00Z","sensor_id":"TEMP-003","location":"Datacenter-B","rack":"R1","temperature":75.8,"humidity":52,"power_usage":1100,"status":"warning"}
+{"timestamp":"2025-10-14T10:15:00Z","sensor_id":"TEMP-004","location":"Datacenter-B","rack":"R3","temperature":70.2,"humidity":46,"power_usage":980,"status":"normal"}
+{"timestamp":"2025-10-14T10:20:00Z","sensor_id":"TEMP-005","location":"Datacenter-C","rack":"R2","temperature":82.1,"humidity":58,"power_usage":1450,"status":"critical"}
+{"timestamp":"2025-10-14T10:25:00Z","sensor_id":"TEMP-006","location":"Datacenter-C","rack":"R4","temperature":71.9,"humidity":44,"power_usage":890,"status":"normal"}
+{"timestamp":"2025-10-14T11:00:00Z","sensor_id":"TEMP-007","location":"Datacenter-A","rack":"R3","temperature":69.5,"humidity":47,"power_usage":910,"status":"normal"}
+{"timestamp":"2025-10-14T11:05:00Z","sensor_id":"TEMP-008","location":"Datacenter-B","rack":"R2","temperature":77.3,"humidity":55,"power_usage":1250,"status":"warning"}
+{"timestamp":"2025-10-14T11:10:00Z","sensor_id":"TEMP-009","location":"Datacenter-A","rack":"R4","temperature":68.8,"humidity":43,"power_usage":870,"status":"normal"}
+{"timestamp":"2025-10-14T11:15:00Z","sensor_id":"TEMP-010","location":"Datacenter-C","rack":"R1","temperature":73.6,"humidity":49,"power_usage":1050,"status":"normal"}
+{"timestamp":"2025-10-14T11:20:00Z","sensor_id":"TEMP-011","location":"Datacenter-B","rack":"R4","temperature":71.2,"humidity":46,"power_usage":995,"status":"normal"}
+{"timestamp":"2025-10-14T11:25:00Z","sensor_id":"TEMP-012","location":"Datacenter-C","rack":"R3","temperature":79.4,"humidity":56,"power_usage":1320,"status":"warning"}

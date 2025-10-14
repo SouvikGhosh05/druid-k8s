@@ -1,0 +1,78 @@
+{
+  "type": "index_parallel",
+  "spec": {
+    "dataSchema": {
+      "dataSource": "clickstream",
+      "timestampSpec": {
+        "column": "timestamp",
+        "format": "iso"
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+          "user_id",
+          "page",
+          "country",
+          "city"
+        ]
+      },
+      "metricsSpec": [
+        {
+          "name": "count",
+          "type": "count"
+        },
+        {
+          "name": "total_duration",
+          "type": "longSum",
+          "fieldName": "session_duration"
+        },
+        {
+          "name": "total_clicks",
+          "type": "longSum",
+          "fieldName": "clicks"
+        },
+        {
+          "name": "avg_duration",
+          "type": "doubleSum",
+          "fieldName": "session_duration"
+        },
+        {
+          "name": "max_clicks",
+          "type": "longMax",
+          "fieldName": "clicks"
+        },
+        {
+          "name": "min_clicks",
+          "type": "longMin",
+          "fieldName": "clicks"
+        }
+      ],
+      "granularitySpec": {
+        "type": "uniform",
+        "segmentGranularity": "HOUR",
+        "queryGranularity": "minute",
+        "rollup": true,
+        "intervals": ["2024-10-14T10:00:00Z/2024-10-14T13:00:00Z"]
+      }
+    },
+    "ioConfig": {
+      "type": "index_parallel",
+      "inputSource": {
+        "type": "local",
+        "baseDir": "/mnt/druid-deep-storage/sample-data/",
+        "filter": "clickstream.json"
+      },
+      "inputFormat": {
+        "type": "json"
+      },
+      "appendToExisting": false
+    },
+    "tuningConfig": {
+      "type": "index_parallel",
+      "partitionsSpec": {
+        "type": "dynamic",
+        "maxRowsPerSegment": 5000
+      },
+      "maxNumConcurrentSubTasks": 2
+    }
+  }
+}

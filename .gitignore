@@ -1,0 +1,38 @@
+# Ignore all markdown files except README.md
+*.md
+!README.md
+
+# Ignore text files
+*.txt
+
+# Ignore temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Ignore Kubernetes secrets and sensitive data
+*.key
+*.pem
+*.crt
+secrets/
+
+# Ignore Helm chart archives
+*.tgz
+charts/
+
+# Ignore deep storage data (large files)
+/mnt/druid-deep-storage/

@@ -1,0 +1,10 @@
+{"timestamp":"2024-10-14T10:00:00Z","product":"Laptop","category":"Electronics","customer":"Alice","country":"US","city":"New York","quantity":2,"revenue":2000}
+{"timestamp":"2024-10-14T10:05:00Z","product":"Phone","category":"Electronics","customer":"Bob","country":"UK","city":"London","quantity":1,"revenue":800}
+{"timestamp":"2024-10-14T10:10:00Z","product":"Tablet","category":"Electronics","customer":"Carol","country":"IN","city":"Mumbai","quantity":3,"revenue":1200}
+{"timestamp":"2024-10-14T10:15:00Z","product":"Headphones","category":"Accessories","customer":"David","country":"CA","city":"Toronto","quantity":5,"revenue":500}
+{"timestamp":"2024-10-14T10:20:00Z","product":"Laptop","category":"Electronics","customer":"Eve","country":"US","city":"San Francisco","quantity":1,"revenue":1000}
+{"timestamp":"2024-10-14T10:25:00Z","product":"Mouse","category":"Accessories","customer":"Frank","country":"DE","city":"Berlin","quantity":10,"revenue":200}
+{"timestamp":"2024-10-14T10:30:00Z","product":"Keyboard","category":"Accessories","customer":"Grace","country":"FR","city":"Paris","quantity":4,"revenue":400}
+{"timestamp":"2024-10-14T10:35:00Z","product":"Phone","category":"Electronics","customer":"Henry","country":"JP","city":"Tokyo","quantity":2,"revenue":1600}
+{"timestamp":"2024-10-14T10:40:00Z","product":"Monitor","category":"Electronics","customer":"Iris","country":"AU","city":"Sydney","quantity":1,"revenue":600}
+{"timestamp":"2024-10-14T10:45:00Z","product":"Laptop","category":"Electronics","customer":"Jack","country":"US","city":"New York","quantity":1,"revenue":1000}
