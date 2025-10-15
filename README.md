@@ -416,38 +416,6 @@ The project includes several sample datasets for testing and demonstration:
 # 4. Submit and verify 3 segments created
 ```
 
-## Documentation
-
-Comprehensive documentation is available in the project root and `docs/` directory:
-
-### Primary Documentation (Root Directory)
-
-1. **[DRUID_INTERVIEW_PREPARATION.md](DRUID_INTERVIEW_PREPARATION.md)** - ⭐ **Start Here for Interviews**
-   - Complete interview preparation guide with Q&A
-   - Segments vs Partitions clarification
-   - Data flow with actual logs
-   - 15 interview questions answered
-
-2. **[DRUID_DATA_FLOW_ARCHITECTURE.md](DRUID_DATA_FLOW_ARCHITECTURE.md)** - Practical Examples
-   - Real cluster examples with actual segment names
-   - Scaling demonstration (1 → 2 Historical nodes)
-   - Hands-on validation steps
-
-3. **[ARCHITECTURE.md](ARCHITECTURE.md)** - Deployment Guide
-   - Helm chart modifications
-   - values.yaml configuration
-   - Deployment validation steps
-
-4. **[DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md)** - Documentation Guide
-   - Overview of all documentation files
-   - Recommendations for different use cases
-   - Quick decision matrix
-
-### Supplementary Documentation (docs/ Directory)
-
-- **[DRUID_COMPLETE_GUIDE.md](docs/DRUID_COMPLETE_GUIDE.md)** - Beginner to intermediate guide
-- **[DATA_FLOW_ARCHITECTURE.md](docs/DATA_FLOW_ARCHITECTURE.md)** - K8s-native architecture deep dive
-
 ## Technology Stack
 
 - **Kubernetes**: K3s v1.28.5+k3s1 (lightweight certified Kubernetes)
@@ -512,7 +480,5 @@ Created as a comprehensive learning resource for deploying Apache Druid on Kuber
 - ✅ Comprehensive interview preparation guide
 - ✅ HTTP server for easy data ingestion
 - ✅ Validated segmentation, replication, and querying
-
-**Ready for**: Interview demonstrations, learning, experimentation, and production-like testing
 
 **Last Updated**: 2025-10-14
