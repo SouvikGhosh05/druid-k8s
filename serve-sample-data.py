@@ -22,7 +22,7 @@ from functools import partial
 
 # Configuration
 DEFAULT_PORT = 8888
-SAMPLE_DATA_DIR = "demo/sample-data"
+SAMPLE_DATA_DIR = "example-data/sample-data"
 
 
 class CustomHTTPRequestHandler(SimpleHTTPRequestHandler):
